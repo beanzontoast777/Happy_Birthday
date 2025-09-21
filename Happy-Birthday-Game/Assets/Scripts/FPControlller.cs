@@ -96,20 +96,66 @@ public class FPController : MonoBehaviour
         }
     }
 
-    
 
 
 
+    public LayerMask groundMask;
     public void HandleMovement()
     {
-        Vector3 move = transform.right * moveInput.x + transform.forward * moveInput.y;
-        controller.Move(move * moveSpeed * Time.deltaTime);
+        Vector3 moveDirection = transform.right * moveInput.x + transform.forward * moveInput.y;
+        float deltaMove = moveSpeed * Time.deltaTime;
+
+        Vector3 newPosition = transform.position + moveDirection * deltaMove;
+
+        float rayDownDistance = 1.5f;
+        float sideOffset = 0.3f;
+        float edgeBuffer = 0.1f;
+
+        Vector3 originCenter = newPosition + Vector3.up * 0.1f;
+        Vector3 originLeft = originCenter - transform.right * sideOffset;
+        Vector3 originRight = originCenter + transform.right * sideOffset;
+
+        bool groundCenter = Physics.Raycast(originCenter, Vector3.down, rayDownDistance, groundMask);
+        bool groundLeft = Physics.Raycast(originLeft, Vector3.down, rayDownDistance, groundMask);
+        bool groundRight = Physics.Raycast(originRight, Vector3.down, rayDownDistance, groundMask);
+
+        if (!groundCenter || !groundLeft || !groundRight)
+        {
+            Vector3 forwardDir = transform.forward * moveInput.y * deltaMove;
+            Vector3 testPosition = transform.position + forwardDir;
+            bool bufferGround = Physics.Raycast(testPosition + Vector3.up * 0.1f, Vector3.down, rayDownDistance + edgeBuffer, groundMask);
+
+            if (!bufferGround)
+            {
+                moveDirection = transform.right * moveInput.x;
+            }
+        }
+
+        controller.Move(moveDirection * deltaMove);
+
 
         if (controller.isGrounded && velocity.y < 0)
             velocity.y = -2f;
 
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+
+
+
+
+        ////normal movement 
+        //Vector3 move = transform.right * moveInput.x + transform.forward * moveInput.y;
+        //controller.Move(move * moveSpeed * Time.deltaTime);
+
+        //if (controller.isGrounded && velocity.y < 0)
+        //    velocity.y = -2f;
+
+        //velocity.y += gravity * Time.deltaTime;
+        //controller.Move(velocity * Time.deltaTime);
+
+
+
+
     }
 
     public void HandleLook()
