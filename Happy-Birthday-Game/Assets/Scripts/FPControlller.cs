@@ -18,6 +18,10 @@ public class FPController : MonoBehaviour
     public float lookSensitivity = 3f;
     public float verticalLookLimit = 90f;
 
+    [Header("UI Settings")]
+    public GameObject InventoryMenu; 
+
+    private bool isInventoryOpen = false;
     private CharacterController controller;
     private Vector2 moveInput;
     private Vector2 lookInput;
@@ -35,6 +39,7 @@ public class FPController : MonoBehaviour
         controls = new PlayerControls();
         controls.Player.Interact.performed += OnInteract; 
         controls.Player.Collect.performed += OnCollect;
+        controls.Player.OpenInventory.performed += OnOpenInventory;
     }
 
     private void OnEnable()
@@ -92,6 +97,26 @@ public class FPController : MonoBehaviour
 
                     Destroy(hit.collider.gameObject);
                 }
+            }
+        }
+    }
+
+    private void OnOpenInventory(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            isInventoryOpen = !isInventoryOpen;
+            InventoryMenu.SetActive(isInventoryOpen);
+
+            if (isInventoryOpen)
+            {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+            }
+            else
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
             }
         }
     }
