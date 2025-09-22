@@ -7,9 +7,9 @@ public class InventoryManager : MonoBehaviour
     public GameObject InventoryMenu;
     private bool menuActivated;
 
-    public void OnOpenInventory(InputAction.CallbackContext context)
+    void Update()
     {
-        if (context.performed)
+        if (Keyboard.current.iKey.wasPressedThisFrame)
         {
             menuActivated = !menuActivated;
             InventoryMenu.SetActive(menuActivated);
