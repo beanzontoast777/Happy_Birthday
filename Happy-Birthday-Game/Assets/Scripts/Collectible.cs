@@ -2,5 +2,7 @@ using UnityEngine;
 
 public class Collectible : MonoBehaviour
 {
-    public string ingredientName = "Cake Ingredient"; 
+    [Header("Ingredient Info")]
+    public string ingredientName;   
+    public Sprite ingredientSprite; 
 }
