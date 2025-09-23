@@ -70,7 +70,7 @@ public class FPController : MonoBehaviour
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
     }
-    
+
     public void OnCollect(InputAction.CallbackContext context)
     {
         if (context.performed)
@@ -81,7 +81,7 @@ public class FPController : MonoBehaviour
                 Collectible collectible = hit.collider.GetComponent<Collectible>();
                 if (collectible != null)
                 {
-             
+
                     PlayerInventory inventory = GetComponent<PlayerInventory>();
                     if (inventory != null)
                     {
