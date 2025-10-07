@@ -76,18 +76,15 @@ public class FPController : MonoBehaviour
         if (context.performed)
         {
             Ray ray = new Ray(cameraTransform.position, cameraTransform.forward);
-            if (Physics.Raycast(ray, out RaycastHit hit, 3f)) // 3f = range
+            if (Physics.Raycast(ray, out RaycastHit hit, 3f))
             {
                 Collectible collectible = hit.collider.GetComponent<Collectible>();
                 if (collectible != null)
                 {
-
                     PlayerInventory inventory = GetComponent<PlayerInventory>();
                     if (inventory != null)
                     {
-                        inventory.CakeIngrediantCollected();
-                        Debug.Log("Collected: " + collectible.ingredientName +
-                                  " | Total: " + inventory.NumberOfCakeIngrediants);
+                        inventory.CollectIngredient(collectible);
                     }
 
                     Destroy(hit.collider.gameObject);
