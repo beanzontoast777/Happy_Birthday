@@ -21,7 +21,24 @@ public class PlayerInventory : MonoBehaviour
         if (!collectedIngredients.Contains(collectible))
         {
             collectedIngredients.Add(collectible);
-            Debug.Log("Collected: " + collectible.ingredientName);                                                      
+            Debug.Log("Collected: " + collectible.ingredientName);
+
+            InventoryManager inventoryManager = FindObjectOfType<InventoryManager>();
+            if (inventoryManager != null)
+            {
+                inventoryManager.UpdateInventoryDisplay(this);
+            }
+            else
+            {
+                Debug.LogError("No InventoryManager found in scene!");
+            }
+
+            // Win condition
+            if (collectedIngredients.Count >= 4)
+            {
+                OnAllIngredientsCollected.Invoke();
+            }
+      
 
             if (collectedIngredients.Count >= 4)
             {
