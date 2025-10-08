@@ -11,7 +11,9 @@ public class FPController : MonoBehaviour
     [Header("Movement Settings")]
     public float moveSpeed = 10f;
     public float gravity = -9.81f;
-    public float jumpHeight = 1.5f;
+    public float jumpHeight = 1.5f;  
+    private int jumpCount = 0;
+    public int maxJumps = 2;
 
     [Header("Look Settings")]
     public Transform cameraTransform;
@@ -63,11 +65,16 @@ public class FPController : MonoBehaviour
     {
         lookInput = context.ReadValue<Vector2>();
     }
+   
     public void OnJump(InputAction.CallbackContext context)
     {
-        if (context.performed && controller.isGrounded)
+        if (context.performed)
         {
-            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            if (IsGrounded() || jumpCount < maxJumps)
+            {
+                velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+                jumpCount++;
+            }
         }
     }
 
@@ -92,8 +99,6 @@ public class FPController : MonoBehaviour
             }
         }
     }
-
-
 
 
     public LayerMask groundMask;
@@ -130,28 +135,16 @@ public class FPController : MonoBehaviour
 
         controller.Move(moveDirection * deltaMove);
 
+        bool grounded = IsGrounded(); 
 
-        if (controller.isGrounded && velocity.y < 0)
+        if (grounded && velocity.y < 0)
+        {
             velocity.y = -2f;
-
+            jumpCount = 0;
+        }
+            
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
-
-
-
-
-        ////normal movement 
-        //Vector3 move = transform.right * moveInput.x + transform.forward * moveInput.y;
-        //controller.Move(move * moveSpeed * Time.deltaTime);
-
-        //if (controller.isGrounded && velocity.y < 0)
-        //    velocity.y = -2f;
-
-        //velocity.y += gravity * Time.deltaTime;
-        //controller.Move(velocity * Time.deltaTime);
-
-
-
 
     }
 
@@ -189,6 +182,9 @@ public class FPController : MonoBehaviour
         }
     }
 
-
+    private bool IsGrounded()
+    {
+        return Physics.Raycast(transform.position, Vector3.down, controller.height / 2f + 0.2f, groundMask);
+    }
 
 }
