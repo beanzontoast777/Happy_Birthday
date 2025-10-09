@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 10152354}
   - component: {fileID: 10152356}
   - component: {fileID: 10152355}
+  - component: {fileID: 10152357}
   m_Layer: 5
   m_Name: TearsSlot
   m_TagString: Untagged
@@ -194,6 +195,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 10152353}
   m_CullTransparentMesh: 1
+--- !u!114 &10152357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10152353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 177890820163dd34a8c1b3d8e28a870d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemIcon: {fileID: 10152355}
 --- !u!1001 &16786238
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1438,10 +1452,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InventoryMenu: {fileID: 1259973684}
   inventorySlotsUI:
-  - {fileID: 917991785}
-  - {fileID: 717264907}
-  - {fileID: 2059604178}
-  - {fileID: 1784567997}
+  - {fileID: 2015867577}
+  - {fileID: 1406630888}
+  - {fileID: 498289706}
+  - {fileID: 10152357}
 --- !u!1001 &348807668
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1890,6 +1904,7 @@ GameObject:
   - component: {fileID: 498289703}
   - component: {fileID: 498289705}
   - component: {fileID: 498289704}
+  - component: {fileID: 498289706}
   m_Layer: 5
   m_Name: SprinklesSlot
   m_TagString: Untagged
@@ -1954,6 +1969,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 498289702}
   m_CullTransparentMesh: 1
+--- !u!114 &498289706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498289702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 177890820163dd34a8c1b3d8e28a870d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemIcon: {fileID: 498289704}
 --- !u!1 &528727108
 GameObject:
   m_ObjectHideFlags: 0
@@ -4460,6 +4488,7 @@ GameObject:
   - component: {fileID: 1406630885}
   - component: {fileID: 1406630887}
   - component: {fileID: 1406630886}
+  - component: {fileID: 1406630888}
   m_Layer: 5
   m_Name: FlourSlot
   m_TagString: Untagged
@@ -4524,6 +4553,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406630884}
   m_CullTransparentMesh: 1
+--- !u!114 &1406630888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406630884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 177890820163dd34a8c1b3d8e28a870d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemIcon: {fileID: 1406630886}
 --- !u!1 &1417651329
 GameObject:
   m_ObjectHideFlags: 0
@@ -6174,6 +6216,7 @@ MonoBehaviour:
   moveSpeed: 5
   gravity: -9.81
   jumpHeight: 1.5
+  maxJumps: 2
   cameraTransform: {fileID: 330585546}
   lookSensitivity: 2
   verticalLookLimit: 90
