@@ -1,5 +1,8 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using System.Collections.Generic; 
+using System.Collections;
 public class InventoryManager : MonoBehaviour
 {
     public GameObject InventoryMenu;
@@ -47,23 +50,46 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-    // Call this from PlayerInventory when an item is collected
     public void UpdateInventoryDisplay(PlayerInventory inventory)
     {
+        // DELETE THE OLD VERSION and replace with this:
+
+        Debug.Log("Updating inventory display with " + inventory.collectedIngredients.Count + " items");
+
         // Clear all slots first
-        foreach (InventorySlotUI slot in inventorySlotsUI)
+        for (int i = 0; i < inventorySlotsUI.Length; i++)
         {
-            slot.ClearSlot();
+            inventorySlotsUI[i].ClearSlot();
         }
 
-        // Fill slots with whatever ingredients we've collected
-        for (int i = 0; i < inventory.collectedIngredients.Count && i < inventorySlotsUI.Length; i++)
+        // Create a mapping of ingredient names to slot indices
+        Dictionary<string, int> slotMapping = new Dictionary<string, int>()
+    {
+        {"Icing", 0},
+        {"Flour", 1},
+        {"Sprinkles", 2},
+        {"Tears", 3}
+    };
+
+        // Fill the correct slots
+        foreach (Collectible ingredient in inventory.collectedIngredients)
         {
-            Collectible ingredient = inventory.collectedIngredients[i];
-            inventorySlotsUI[i].SetSlot(ingredient.ingredientSprite, ingredient.ingredientName);
+            if (slotMapping.ContainsKey(ingredient.ingredientName))
+            {
+                int slotIndex = slotMapping[ingredient.ingredientName];
+                if (slotIndex < inventorySlotsUI.Length)
+                {
+                    Debug.Log($"Assigning {ingredient.ingredientName} to slot {slotIndex}");
+                    inventorySlotsUI[slotIndex].SetSlot(ingredient.ingredientSprite, ingredient.ingredientName);
+                }
+            }
+            else
+            {
+                Debug.LogWarning($"No slot mapping found for: {ingredient.ingredientName}");
+            }
         }
 
-        // Show inventory briefly when new item is collected
+        // Show inventory briefly
         if (!menuActivated)
         {
             ShowInventoryBriefly();
