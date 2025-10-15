@@ -6,21 +6,29 @@ using UnityEngine.Events;
 //Reference: Unity3D (2023) How to Collect Items (Unity Tutorial). 15 March. Available at: https://youtu.be/EfUCEwKmcjc (Accessed: 14 August 2025).
 //Reference: OpenAI, 2025. ChatGPT (GPT-5 mini) [AI language model]. Personal assistance with Debugging script. 19 August 2025.
 
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Events;
-
 public class PlayerInventory : MonoBehaviour
 {
     public List<Collectible> collectedIngredients = new List<Collectible>();
-    public UnityEvent OnAllIngredientsCollected; 
+    public UnityEvent OnAllIngredientsCollected;
 
     public void CollectIngredient(Collectible collectible)
     {
         if (!collectedIngredients.Contains(collectible))
         {
             collectedIngredients.Add(collectible);
+
+            // ADDED DEBUG LINES
+            Debug.Log("=== COLLECTION LOG ===");
+            Debug.Log("Just collected: " + collectible.ingredientName);
+            Debug.Log("Total collected so far: " + collectedIngredients.Count);
+
+            // Debug: List all collected items
+            foreach (Collectible item in collectedIngredients)
+            {
+                Debug.Log(" - " + item.ingredientName);
+            }
+            // END OF ADDED DEBUG LINES
+
             Debug.Log("Collected: " + collectible.ingredientName);
 
             InventoryManager inventoryManager = FindObjectOfType<InventoryManager>();
@@ -34,12 +42,6 @@ public class PlayerInventory : MonoBehaviour
             }
 
             // Win condition
-            if (collectedIngredients.Count >= 4)
-            {
-                OnAllIngredientsCollected.Invoke();
-            }
-      
-
             if (collectedIngredients.Count >= 4)
             {
                 OnAllIngredientsCollected.Invoke();

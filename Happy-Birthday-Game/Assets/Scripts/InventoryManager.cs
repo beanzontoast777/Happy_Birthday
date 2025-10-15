@@ -52,9 +52,14 @@ public class InventoryManager : MonoBehaviour
 
     public void UpdateInventoryDisplay(PlayerInventory inventory)
     {
-        // DELETE THE OLD VERSION and replace with this:
+        Debug.Log("=== INVENTORY UPDATE ===");
+        Debug.Log("Collected items: " + inventory.collectedIngredients.Count);
 
-        Debug.Log("Updating inventory display with " + inventory.collectedIngredients.Count + " items");
+        // Debug: Show ALL collected items
+        foreach (Collectible item in inventory.collectedIngredients)
+        {
+            Debug.Log("Collected: " + item.ingredientName + " (Sprite: " + (item.ingredientSprite != null) + ")");
+        }
 
         // Clear all slots first
         for (int i = 0; i < inventorySlotsUI.Length; i++)
@@ -62,32 +67,51 @@ public class InventoryManager : MonoBehaviour
             inventorySlotsUI[i].ClearSlot();
         }
 
-        // Create a mapping of ingredient names to slot indices
-        Dictionary<string, int> slotMapping = new Dictionary<string, int>()
-    {
-        {"Icing", 0},
-        {"Flour", 1},
-        {"Sprinkles", 2},
-        {"Tears", 3}
-    };
-
-        // Fill the correct slots
+        // Fill ALL slots with ALL collected items - FIXED
         foreach (Collectible ingredient in inventory.collectedIngredients)
         {
-            if (slotMapping.ContainsKey(ingredient.ingredientName))
+            int slotIndex = -1;
+
+            // Match your ingredient names
+            switch (ingredient.ingredientName)
             {
-                int slotIndex = slotMapping[ingredient.ingredientName];
-                if (slotIndex < inventorySlotsUI.Length)
-                {
-                    Debug.Log($"Assigning {ingredient.ingredientName} to slot {slotIndex}");
-                    inventorySlotsUI[slotIndex].SetSlot(ingredient.ingredientSprite, ingredient.ingredientName);
-                }
+                case "Icing": slotIndex = 0; break;
+                case "Flour": slotIndex = 1; break;
+                case "Sprinkles": slotIndex = 2; break;
+                case "Tears": slotIndex = 3; break;
+                default:
+                    Debug.LogError("Unknown ingredient: " + ingredient.ingredientName);
+                    break;
+            }
+
+            if (slotIndex != -1 && slotIndex < inventorySlotsUI.Length)
+            {
+                Debug.Log("Assigning " + ingredient.ingredientName + " to slot " + slotIndex);
+                inventorySlotsUI[slotIndex].SetSlot(ingredient.ingredientSprite, ingredient.ingredientName);
             }
             else
             {
-                Debug.LogWarning($"No slot mapping found for: {ingredient.ingredientName}");
+                Debug.LogError("Invalid slot index for: " + ingredient.ingredientName);
             }
         }
+
+        // Debug: Check what's actually in slots after assignment
+        Debug.Log("=== SLOT STATUS AFTER UPDATE ===");
+        for (int i = 0; i < inventorySlotsUI.Length; i++)
+        {
+            bool hasSprite = inventorySlotsUI[i].itemIcon != null &&
+                            inventorySlotsUI[i].itemIcon.sprite != null &&
+                            inventorySlotsUI[i].itemIcon.enabled;
+            Debug.Log("Slot " + i + ": " + (hasSprite ? "FILLED" : "EMPTY"));
+        }
+
+        // Show inventory briefly
+        if (!menuActivated)
+        {
+            ShowInventoryBriefly();
+        }
+    
+    
 
         // Show inventory briefly
         if (!menuActivated)
