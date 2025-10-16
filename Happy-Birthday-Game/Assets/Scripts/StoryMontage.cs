@@ -8,13 +8,15 @@ public class StoryMontage : MonoBehaviour
     [Header("UI References")]
     public TMP_Text dialogueText;
     public Button continueButton;
+    public GameObject controlsMenu; 
 
     [Header("Story Text")]
     [TextArea(3, 10)]
     public string[] dialogueLines;
 
     private int currentLine = 0;
-   
+    private bool buttonLocked = false;
+
 
     void Start()
     {
@@ -28,17 +30,35 @@ public class StoryMontage : MonoBehaviour
         continueButton.onClick.AddListener(OnContinuePressed);
 
         dialogueText.text = dialogueLines[currentLine];
+
+        if (controlsMenu != null)
+            controlsMenu.SetActive(false);
     }
 
-    void OnContinuePressed()
+     public void OnContinuePressed()
     {
-        if (currentLine >= dialogueLines.Length - 1)
-        {
-            SceneManager.LoadScene("GameScene");
-            return;
-        }
+        if (buttonLocked) return;
+        buttonLocked = true;
 
         currentLine++;
-        dialogueText.text = dialogueLines[currentLine];
+
+        if (currentLine < dialogueLines.Length)
+        {
+            dialogueText.text = dialogueLines[currentLine];
+        }
+        else
+        {
+            if (controlsMenu != null)
+                controlsMenu.SetActive(true);
+            gameObject.SetActive(false);
+        }
+
+        StartCoroutine(UnlockButtonNextFrame());
+    }
+
+    private System.Collections.IEnumerator UnlockButtonNextFrame()
+    {
+        yield return null;
+        buttonLocked = false;
     }
 }
