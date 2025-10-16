@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Collections;
 public class InventoryManager : MonoBehaviour
 {
+    public GameObject InventoryCanvas;
     public GameObject InventoryMenu;
     public InventorySlotUI[] inventorySlotsUI; // Assign 4 slots in Inspector
 
@@ -22,7 +23,8 @@ public class InventoryManager : MonoBehaviour
 
         // Ensure inventory is hidden at start
         if (InventoryMenu != null)
-            InventoryMenu.SetActive(false);
+            //InventoryMenu.SetActive(false);
+            StartCoroutine(inventoryOn());
     }
 
     void Update()
@@ -143,5 +145,16 @@ public class InventoryManager : MonoBehaviour
         // - Show victory screen
         // - Make inventory slots glow
         // - Play celebration animation
+    }
+
+    IEnumerator inventoryOn()
+    {
+        InventoryCanvas.SetActive(false);
+        InventoryMenu.SetActive(true);
+
+        yield return new WaitForSeconds(.01f);
+
+        InventoryMenu.SetActive(false);
+        InventoryCanvas.SetActive(true);
     }
 }
