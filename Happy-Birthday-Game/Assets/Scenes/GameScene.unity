@@ -1178,6 +1178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fdb3f8c0cedb9c419bd4fd6590a72cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InventoryCanvas: {fileID: 343996778}
   InventoryMenu: {fileID: 1259973684}
   inventorySlotsUI:
   - {fileID: 917991785}
