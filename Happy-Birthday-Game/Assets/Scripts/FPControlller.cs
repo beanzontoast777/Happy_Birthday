@@ -104,14 +104,14 @@ public class FPController : MonoBehaviour
     public LayerMask groundMask;
     public void HandleMovement()
     {
-        Vector3 moveDirection = transform.right * moveInput.x + transform.forward * moveInput.y;
+        Vector3 moveDirection = (transform.right * moveInput.x + transform.forward * moveInput.y).normalized;
         float deltaMove = moveSpeed * Time.deltaTime;
 
         Vector3 newPosition = transform.position + moveDirection * deltaMove;
 
         float rayDownDistance = 1.5f;
         float sideOffset = 0.3f;
-        float edgeBuffer = 0.1f;
+        float edgeBuffer = 0.5f;
 
         Vector3 originCenter = newPosition + Vector3.up * 0.1f;
         Vector3 originLeft = originCenter - transform.right * sideOffset;
