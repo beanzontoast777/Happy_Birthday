@@ -45,15 +45,17 @@ public class StoryMontage : MonoBehaviour
         if (currentLine < dialogueLines.Length)
         {
             dialogueText.text = dialogueLines[currentLine];
+            StartCoroutine(UnlockButtonNextFrame());
         }
         else
         {
             if (controlsMenu != null)
                 controlsMenu.SetActive(true);
+
+            buttonLocked = false;
             gameObject.SetActive(false);
         }
 
-        StartCoroutine(UnlockButtonNextFrame());
     }
 
     private System.Collections.IEnumerator UnlockButtonNextFrame()
