@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
@@ -14,12 +15,16 @@ public class PauseMenu : MonoBehaviour
     public string mainMenuSceneName = "MainMenu";
 
     private bool isPaused = false;
+    private FPController playerController;
 
     void Start()
     {
         pauseMenuUI.SetActive(false);
         pauseControlsUI.SetActive(false);
         pauseButton.SetActive(true);
+
+        playerController = FindFirstObjectByType<FPController>();
+
     }
 
     void Update()
@@ -33,22 +38,31 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    public void PauseGame()
+    public void SetGamePaused(bool paused)
     {
-        if (pauseMenuUI != null)
+        if (paused)
         {
-            pauseMenuUI.SetActive(true);
+            Time.timeScale = 0f;
+            isPaused = true;
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            DisablePlayerInput();
         }
         else
         {
-            Debug.LogError("PauseMenuUI is NULL!");
+            Time.timeScale = 1f;
+            isPaused = false;
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            EnablePlayerInput();
         }
-
+    }
+    public void PauseGame()
+    {
+        Debug.Log("Pause button pressed!");
+        pauseMenuUI.SetActive(true);
         pauseButton.SetActive(false);
-        Time.timeScale = 0f;
-        isPaused = true;
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
+        SetGamePaused(true);
 
     }
 
@@ -57,10 +71,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         pauseControlsUI.SetActive(false);
         pauseButton.SetActive(true);
-        Time.timeScale = 1f;
-        isPaused = false;
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        SetGamePaused(false);
     }
 
     public void OpenControls()
@@ -75,7 +86,16 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene(mainMenuSceneName);
     }
 
+    private void DisablePlayerInput()
+    {
+        if (playerController != null)
+            playerController.enabled = false;
+    }
 
-
+    private void EnablePlayerInput()
+    {
+        if (playerController != null)
+            playerController.enabled = true;
+    }
 
 }
