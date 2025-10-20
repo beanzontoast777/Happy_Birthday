@@ -1,5 +1,6 @@
 using UnityEngine;
-using TMPro; 
+using TMPro;
+using UnityEngine.UI;
 
 public class DialogueUI : MonoBehaviour
 {
@@ -7,24 +8,42 @@ public class DialogueUI : MonoBehaviour
 
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TMP_Text dialogueText;
+    [SerializeField] private Image speechBubbleImage;
 
     private void Awake()
     {
-        if (Instance == null) Instance = this;
-        dialoguePanel.SetActive(false);
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            return;
+        }
+
+        if (dialoguePanel != null)
+            dialoguePanel.SetActive(false);
     }
 
     public void ShowDialogue(string line)
     {
-        dialoguePanel.SetActive(true);
-        dialogueText.text = line;
+        if (dialoguePanel != null)
+            dialoguePanel.SetActive(true);
+
+        if (dialogueText != null)
+            dialogueText.text = line;
+        else
+            Debug.LogError("Dialogue Text is not assigned!");
     }
 
     public void HideDialogue()
     {
-        dialoguePanel.SetActive(false);
-        dialogueText.text = "";
+        if (dialoguePanel != null)
+            dialoguePanel.SetActive(false);
+
+        if (dialogueText != null)
+            dialogueText.text = "";
     }
 
-    public bool IsOpen => dialoguePanel.activeSelf;
+    public bool IsOpen => dialoguePanel != null && dialoguePanel.activeSelf;
 }
