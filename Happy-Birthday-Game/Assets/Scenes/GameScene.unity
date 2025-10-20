@@ -5,11 +5,11 @@ OcclusionCullingSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_OcclusionBakeSettings:
-    smallestOccluder: 5
+    smallestOccluder: 3
     smallestHole: 0.25
     backfaceThreshold: 100
-  m_SceneGUID: 00000000000000000000000000000000
-  m_OcclusionCullingData: {fileID: 0}
+  m_SceneGUID: 99c9720ab356a0642a771bea13969a05
+  m_OcclusionCullingData: {fileID: 36300000, guid: 83f49ffbf6aac534c8ea9fd2e24aa0c8, type: 2}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -257,6 +257,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
       propertyPath: m_Name
       value: Large Coniferous Tree1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -648,6 +652,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small Coniferous Tree
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 823c7004da393ae42a66095fba28e25f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -721,6 +729,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
       propertyPath: m_Name
       value: Large Coniferous Tree1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -796,6 +808,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small Coniferous Tree
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 823c7004da393ae42a66095fba28e25f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -870,6 +886,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Coniferous Tree1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -943,6 +963,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
       propertyPath: m_Name
       value: Large Coniferous Tree1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1085,6 +1109,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small Tree3 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 84a140dd1affd1345a913338d54af3fe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1158,6 +1186,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
       propertyPath: m_Name
       value: Large Coniferous Tree1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1233,6 +1265,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Coniferous Tree1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1307,6 +1343,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Tree (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1b7513ea8cbb88e409dcffb273eb8cab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1380,6 +1420,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
       propertyPath: m_Name
       value: Large Coniferous Tree1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1532,6 +1576,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
       propertyPath: m_Name
       value: Feathered Tree (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1892,6 +1940,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Coniferous Tree1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2108,6 +2160,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Feathered Tree (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2182,6 +2238,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tall Tree1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 06928c20cf8639f41aff4be213f866ed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2255,6 +2315,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
       propertyPath: m_Name
       value: Feathered Tree (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2361,6 +2425,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
       propertyPath: m_Name
       value: Feathered Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2573,6 +2641,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Coniferous Tree1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2764,6 +2836,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tall Tree1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 06928c20cf8639f41aff4be213f866ed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2837,6 +2913,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
       propertyPath: m_Name
       value: Feathered Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2912,6 +2992,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Coniferous Tree1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2985,6 +3069,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 84a140dd1affd1345a913338d54af3fe, type: 3}
       propertyPath: m_Name
       value: Small Tree3 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 84a140dd1affd1345a913338d54af3fe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3137,6 +3225,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
       propertyPath: m_Name
       value: Feathered Tree (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3333,6 +3425,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Coniferous Tree1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3406,6 +3502,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 823c7004da393ae42a66095fba28e25f, type: 3}
       propertyPath: m_Name
       value: Small Coniferous Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 823c7004da393ae42a66095fba28e25f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3481,6 +3581,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Coniferous Tree1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3554,6 +3658,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
       propertyPath: m_Name
       value: Large Coniferous Tree1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3761,6 +3869,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Feathered Tree (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3834,6 +3946,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
       propertyPath: m_Name
       value: Large Coniferous Tree1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4060,6 +4176,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Feathered Tree (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4133,6 +4253,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
       propertyPath: m_Name
       value: Large Coniferous Tree1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4398,6 +4522,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Coniferous Tree1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4472,6 +4600,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Feathered Tree
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4545,6 +4677,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
       propertyPath: m_Name
       value: Large Coniferous Tree1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4698,6 +4834,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Coniferous Tree1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4807,6 +4947,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Coniferous Tree1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4881,6 +5025,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Coniferous Tree1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4954,6 +5102,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 823c7004da393ae42a66095fba28e25f, type: 3}
       propertyPath: m_Name
       value: Small Coniferous Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 823c7004da393ae42a66095fba28e25f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5173,6 +5325,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 06928c20cf8639f41aff4be213f866ed, type: 3}
       propertyPath: m_Name
       value: Tall Tree1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 06928c20cf8639f41aff4be213f866ed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5560,6 +5716,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Coniferous Tree1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5634,6 +5794,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Coniferous Tree1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5707,6 +5871,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 823c7004da393ae42a66095fba28e25f, type: 3}
       propertyPath: m_Name
       value: Small Coniferous Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 823c7004da393ae42a66095fba28e25f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6180,6 +6348,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Feathered Tree (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6476,6 +6648,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Coniferous Tree1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6549,6 +6725,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
       propertyPath: m_Name
       value: Feathered Tree (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6710,6 +6890,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Coniferous Tree1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6846,6 +7030,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Feathered Tree
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6919,6 +7107,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 823c7004da393ae42a66095fba28e25f, type: 3}
       propertyPath: m_Name
       value: Small Coniferous Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 823c7004da393ae42a66095fba28e25f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6994,6 +7186,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Feathered Tree
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7063,6 +7259,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
       propertyPath: m_Name
       value: Feathered Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7137,6 +7337,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
       propertyPath: m_Name
       value: Large Coniferous Tree1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7368,6 +7572,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Coniferous Tree1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7442,6 +7650,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Feathered Tree (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7515,6 +7727,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
       propertyPath: m_Name
       value: Large Coniferous Tree1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7663,6 +7879,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
       propertyPath: m_Name
       value: Large Coniferous Tree1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7816,6 +8036,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Tree (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1b7513ea8cbb88e409dcffb273eb8cab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7890,6 +8114,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Coniferous Tree1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7963,6 +8191,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1b7513ea8cbb88e409dcffb273eb8cab, type: 3}
       propertyPath: m_Name
       value: Large Tree (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1b7513ea8cbb88e409dcffb273eb8cab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8210,6 +8442,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Coniferous Tree1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8284,6 +8520,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small Coniferous Tree
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 823c7004da393ae42a66095fba28e25f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8308,7 +8548,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 125
   m_IsActive: 1
 --- !u!4 &1227939671
 Transform:
@@ -8879,6 +9119,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Coniferous Tree1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8953,6 +9197,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Tree
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1b7513ea8cbb88e409dcffb273eb8cab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9022,6 +9270,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
       propertyPath: m_Name
       value: Feathered Tree (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9096,6 +9348,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
       propertyPath: m_Name
       value: Large Coniferous Tree1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9238,6 +9494,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Coniferous Tree1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9311,6 +9571,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
       propertyPath: m_Name
       value: Feathered Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9534,6 +9798,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Coniferous Tree1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9607,6 +9875,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
       propertyPath: m_Name
       value: Large Coniferous Tree1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9792,6 +10064,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Tree (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1b7513ea8cbb88e409dcffb273eb8cab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9865,6 +10141,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
       propertyPath: m_Name
       value: Feathered Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10126,6 +10406,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Coniferous Tree1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10199,6 +10483,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 84a140dd1affd1345a913338d54af3fe, type: 3}
       propertyPath: m_Name
       value: Small Tree3 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 84a140dd1affd1345a913338d54af3fe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10274,6 +10562,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small Coniferous Tree
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 823c7004da393ae42a66095fba28e25f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10342,6 +10634,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 823c7004da393ae42a66095fba28e25f, type: 3}
       propertyPath: m_Name
       value: Small Coniferous Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 823c7004da393ae42a66095fba28e25f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10416,6 +10712,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
       propertyPath: m_Name
       value: Feathered Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10583,6 +10883,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 84a140dd1affd1345a913338d54af3fe, type: 3}
       propertyPath: m_Name
       value: Small Tree3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 84a140dd1affd1345a913338d54af3fe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10791,6 +11095,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small Coniferous Tree
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 823c7004da393ae42a66095fba28e25f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10943,6 +11251,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Coniferous Tree1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11021,6 +11333,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1b7513ea8cbb88e409dcffb273eb8cab, type: 3}
       propertyPath: m_Name
       value: Large Tree (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1b7513ea8cbb88e409dcffb273eb8cab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11144,6 +11460,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Feathered Tree
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11217,6 +11537,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 84a140dd1affd1345a913338d54af3fe, type: 3}
       propertyPath: m_Name
       value: Small Tree3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 84a140dd1affd1345a913338d54af3fe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11459,7 +11783,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 111
   m_IsActive: 1
 --- !u!154 &1730132768
 TerrainCollider:
@@ -11743,6 +12067,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small Tree3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 84a140dd1affd1345a913338d54af3fe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11816,6 +12144,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
       propertyPath: m_Name
       value: Feathered Tree (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11981,6 +12313,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Feathered Tree
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12054,6 +12390,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
       propertyPath: m_Name
       value: Large Coniferous Tree1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12207,6 +12547,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Coniferous Tree1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12275,6 +12619,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
       propertyPath: m_Name
       value: Feathered Tree (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12602,6 +12950,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small Coniferous Tree
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 823c7004da393ae42a66095fba28e25f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12675,6 +13027,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 823c7004da393ae42a66095fba28e25f, type: 3}
       propertyPath: m_Name
       value: Small Coniferous Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 823c7004da393ae42a66095fba28e25f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12754,6 +13110,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
       propertyPath: m_Name
       value: Large Coniferous Tree1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12904,6 +13264,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Coniferous Tree1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12977,6 +13341,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
       propertyPath: m_Name
       value: Large Coniferous Tree1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13671,6 +14039,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Coniferous Tree1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13835,6 +14207,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Coniferous Tree1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13908,6 +14284,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
       propertyPath: m_Name
       value: Large Coniferous Tree1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13983,6 +14363,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small Tree3 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 84a140dd1affd1345a913338d54af3fe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14056,6 +14440,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
       propertyPath: m_Name
       value: Large Coniferous Tree1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14131,6 +14519,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Feathered Tree
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3fff490d65f06be4fbdf5290752c9b15, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14205,6 +14597,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Coniferous Tree1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14278,6 +14674,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
       propertyPath: m_Name
       value: Large Coniferous Tree1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
