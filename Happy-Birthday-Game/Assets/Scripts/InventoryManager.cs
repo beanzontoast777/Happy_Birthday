@@ -21,7 +21,7 @@ public class InventoryManager : MonoBehaviour
             playerInventory.OnAllIngredientsCollected.AddListener(OnGameWon);
         }
 
-        // Simple setup - no coroutines
+        // Activate Inventory Menu
         if (InventoryMenu != null)
         {
             InventoryMenu.SetActive(false);
