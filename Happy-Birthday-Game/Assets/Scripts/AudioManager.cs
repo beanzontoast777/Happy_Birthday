@@ -1,6 +1,13 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/*
+ * Audio Credits
+ * -------------
+ * All music composed by Bontle Tlhapane using GarageBand
+ * © 2025 All rights reserved
+ */
+
 
 public class AudioManager : MonoBehaviour
 {
