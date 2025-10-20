@@ -1,18 +1,27 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance { get; private set; }
 
+    [Header("Sound Effects")]
     [SerializeField] private AudioClip sparkleSound;
+
+    [Header("Music")]
+    [SerializeField] private AudioClip mainMenuMusic;
+
     private AudioSource audioSource;
+    private AudioSource musicSource;
 
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); 
+            DontDestroyOnLoad(gameObject);
+            SceneManager.sceneLoaded += OnSceneLoaded;
         }
         else
         {
@@ -21,6 +30,37 @@ public class AudioManager : MonoBehaviour
         }
 
         audioSource = GetComponent<AudioSource>();
+
+        musicSource = gameObject.AddComponent<AudioSource>();
+        musicSource.loop = false;
+        musicSource.volume = 0.7f;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        string sceneName = scene.name;
+
+        if (sceneName.ToLower().Contains("mainmenu"))
+        {
+            PlayMainMenuMusic();
+        }
+        else
+        {
+            if (musicSource.isPlaying)
+            {
+                musicSource.Stop();
+            }
+        }
+    }
+
+    public void PlayMainMenuMusic()
+    {
+        if (mainMenuMusic != null && musicSource != null && !musicSource.isPlaying)
+        {
+            musicSource.clip = mainMenuMusic;
+            musicSource.Play();
+            Debug.Log("Main menu music started: " + mainMenuMusic.name);
+        }
     }
 
     public void PlaySparkleSound()
@@ -35,6 +75,11 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-
-
+    private void OnDestroy()
+    {
+        if (Instance == this)
+        {
+            SceneManager.sceneLoaded -= OnSceneLoaded;
+        }
+    }
 }
