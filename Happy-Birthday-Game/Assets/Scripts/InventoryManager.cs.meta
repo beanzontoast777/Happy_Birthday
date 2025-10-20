@@ -1,2 +1,14 @@
 fileFormatVersion: 2
 guid: 2fdb3f8c0cedb9c419bd4fd6590a72cc
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - InventoryCanvas: {fileID: 3892909486477370686, guid: cb1eb760bb4208c40a6223407d451356, type: 3}
+  - InventoryMenu: {fileID: 1284784790378088020, guid: 5e20aba48e8926d4fadcce17873d311b, type: 3}
+  - winPanel: {fileID: 1294892767747108590, guid: 876e5227f89578f428343e7b73c28282, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
