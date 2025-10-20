@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.UI;
+using System.Collections; 
 
 public class StoryMontage : MonoBehaviour
 {
@@ -38,6 +39,12 @@ public class StoryMontage : MonoBehaviour
      public void OnContinuePressed()
     {
         if (buttonLocked) return;
+
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlaySparkleSound();
+        }
+
         buttonLocked = true;
 
         currentLine++;
@@ -45,7 +52,8 @@ public class StoryMontage : MonoBehaviour
         if (currentLine < dialogueLines.Length)
         {
             dialogueText.text = dialogueLines[currentLine];
-            StartCoroutine(UnlockButtonNextFrame());
+
+            StartCoroutine(UnlockButtonAfterDelay(0.1f));
         }
         else
         {
@@ -58,9 +66,9 @@ public class StoryMontage : MonoBehaviour
 
     }
 
-    private System.Collections.IEnumerator UnlockButtonNextFrame()
+    private IEnumerator UnlockButtonAfterDelay(float delay)
     {
-        yield return null;
+        yield return new WaitForSeconds(delay);
         buttonLocked = false;
     }
 }

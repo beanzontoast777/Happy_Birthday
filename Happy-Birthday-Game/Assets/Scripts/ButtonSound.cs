@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 
@@ -22,9 +23,9 @@ public class ButtonSound : MonoBehaviour
 
     private void PlayButtonSound()
     {
-        if (SoundManager.Instance != null)
+        if (AudioManager.Instance != null)
         {
-            SoundManager.Instance.PlaySparkleSound();
+            AudioManager.Instance.PlaySparkleSound();
         }
         else
         {

@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class SoundManager : MonoBehaviour
+public class AudioManager : MonoBehaviour
 {
-    public static SoundManager Instance { get; private set; }
+    public static AudioManager Instance { get; private set; }
 
     [SerializeField] private AudioClip sparkleSound;
     private AudioSource audioSource;
