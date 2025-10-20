@@ -11,6 +11,7 @@ public class AudioManager : MonoBehaviour
 
     [Header("Music")]
     [SerializeField] private AudioClip mainMenuMusic;
+    [SerializeField] private AudioClip storyMontageMusic;
 
     private AudioSource audioSource;
     private AudioSource musicSource;
@@ -32,7 +33,7 @@ public class AudioManager : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
 
         musicSource = gameObject.AddComponent<AudioSource>();
-        musicSource.loop = false;
+        musicSource.loop = true;
         musicSource.volume = 0.7f;
     }
 
@@ -40,26 +41,40 @@ public class AudioManager : MonoBehaviour
     {
         string sceneName = scene.name;
 
-        if (sceneName.ToLower().Contains("mainmenu"))
+        if (musicSource.isPlaying)
+        {
+            musicSource.Stop();
+        }
+
+        if (sceneName == "MainMenu")
         {
             PlayMainMenuMusic();
         }
-        else
+        else if (sceneName == "StoryMontage")
         {
-            if (musicSource.isPlaying)
-            {
-                musicSource.Stop();
-            }
+            PlayStoryMontageMusic();
         }
     }
 
     public void PlayMainMenuMusic()
     {
-        if (mainMenuMusic != null && musicSource != null && !musicSource.isPlaying)
+        if (mainMenuMusic != null && musicSource != null)
         {
+            musicSource.loop = false;
             musicSource.clip = mainMenuMusic;
             musicSource.Play();
             Debug.Log("Main menu music started: " + mainMenuMusic.name);
+        }
+    }
+
+    public void PlayStoryMontageMusic()
+    {
+        if (storyMontageMusic != null && musicSource != null)
+        {
+            musicSource.loop = true;
+            musicSource.clip = storyMontageMusic;
+            musicSource.Play();
+            Debug.Log("Story montage music started (looping): " + storyMontageMusic.name);
         }
     }
 
