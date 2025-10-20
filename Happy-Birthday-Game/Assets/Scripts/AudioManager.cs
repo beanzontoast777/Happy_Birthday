@@ -12,6 +12,7 @@ public class AudioManager : MonoBehaviour
     [Header("Music")]
     [SerializeField] private AudioClip mainMenuMusic;
     [SerializeField] private AudioClip storyMontageMusic;
+    [SerializeField] private AudioClip gameplayMusic;
 
     private AudioSource audioSource;
     private AudioSource musicSource;
@@ -54,6 +55,10 @@ public class AudioManager : MonoBehaviour
         {
             PlayStoryMontageMusic();
         }
+        else if (sceneName == "GameScene")
+        {
+            PlayGameplayMusic();
+        }
     }
 
     public void PlayMainMenuMusic()
@@ -75,6 +80,20 @@ public class AudioManager : MonoBehaviour
             musicSource.clip = storyMontageMusic;
             musicSource.Play();
             Debug.Log("Story montage music started (looping): " + storyMontageMusic.name);
+        }
+    }
+
+    public void PlayGameplayMusic()
+    {
+        if (gameplayMusic != null && musicSource != null)
+        {
+            musicSource.loop = true;
+            musicSource.clip = gameplayMusic;
+            musicSource.Play();
+
+            musicSource.ignoreListenerPause = true;
+
+            Debug.Log("Gameplay music started (looping, unpausable): " + gameplayMusic.name);
         }
     }
 
