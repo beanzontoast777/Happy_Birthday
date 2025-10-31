@@ -67380,7 +67380,7 @@ MonoBehaviour:
   jumpHeight: 1.5
   maxJumps: 2
   cameraTransform: {fileID: 330585546}
-  lookSensitivity: 2
+  lookSensitivity: 1
   verticalLookLimit: 90
   groundMask:
     serializedVersion: 2
