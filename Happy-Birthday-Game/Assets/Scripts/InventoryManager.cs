@@ -19,6 +19,7 @@ public class InventoryManager : MonoBehaviour
         if (playerInventory != null)
         {
             playerInventory.OnAllIngredientsCollected.AddListener(OnGameWon);
+            UpdateInventoryDisplay(playerInventory);
         }
 
         // Activate Inventory Menu
