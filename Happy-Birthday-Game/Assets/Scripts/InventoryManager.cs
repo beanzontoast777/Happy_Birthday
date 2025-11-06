@@ -41,11 +41,17 @@ public class InventoryManager : MonoBehaviour
 
             // Force initial inventory update
             UpdateInventoryDisplay(playerInventory);
-            Debug.Log("Inventory system initialized with " + playerInventory.collectedIngredients.Count + " items");
-        }
-        else
-        {
-            Debug.LogError("PlayerInventory not found in scene!");
+
+            // Show inventory briefly at start (SHORT - 1.5 seconds)
+            if (InventoryMenu != null)
+            {
+                InventoryMenu.SetActive(true);
+                yield return new WaitForSeconds(1.5f); // Shorter time
+                if (!menuActivated) // Only hide if player didn't open it manually
+                {
+                    InventoryMenu.SetActive(false);
+                }
+            }
         }
 
         Debug.Log("Inventory ready - Press I to open");
