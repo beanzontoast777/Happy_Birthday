@@ -14,15 +14,7 @@ public class InventoryManager : MonoBehaviour
 
     void Start()
     {
-        // Find player inventory
-        PlayerInventory playerInventory = FindObjectOfType<PlayerInventory>();
-        if (playerInventory != null)
-        {
-            playerInventory.OnAllIngredientsCollected.AddListener(OnGameWon);
-            UpdateInventoryDisplay(playerInventory);
-        }
-
-        // Activate Inventory Menu
+        // Activate UI first
         if (InventoryMenu != null)
         {
             InventoryMenu.SetActive(false);
@@ -30,6 +22,30 @@ public class InventoryManager : MonoBehaviour
         if (InventoryCanvas != null)
         {
             InventoryCanvas.SetActive(true);
+        }
+
+        // Wait one frame then initialize inventory system
+        StartCoroutine(InitializeInventory());
+    }
+
+    private IEnumerator InitializeInventory()
+    {
+        // Wait for one frame to ensure all components are loaded
+        yield return null;
+
+        // Find player inventory
+        PlayerInventory playerInventory = FindObjectOfType<PlayerInventory>();
+        if (playerInventory != null)
+        {
+            playerInventory.OnAllIngredientsCollected.AddListener(OnGameWon);
+
+            // Force initial inventory update
+            UpdateInventoryDisplay(playerInventory);
+            Debug.Log("Inventory system initialized with " + playerInventory.collectedIngredients.Count + " items");
+        }
+        else
+        {
+            Debug.LogError("PlayerInventory not found in scene!");
         }
 
         Debug.Log("Inventory ready - Press I to open");
