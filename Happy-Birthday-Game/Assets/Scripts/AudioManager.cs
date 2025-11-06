@@ -116,6 +116,16 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void StopMusic()
+    {
+        if (musicSource != null && musicSource.isPlaying)
+        {
+            musicSource.Stop();
+            Debug.Log("Music stopped");
+        }
+    }
+    
+
     private void OnDestroy()
     {
         if (Instance == this)

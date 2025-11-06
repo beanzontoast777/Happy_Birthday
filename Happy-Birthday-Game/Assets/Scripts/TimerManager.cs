@@ -14,6 +14,9 @@ public class TimerManager : MonoBehaviour
     [Header("Lose Screen")]
     public GameObject loseScreen;
 
+    [Header("Pause Menu Reference")]
+    public PauseMenu pauseMenu;
+
     private float currentTime;
     private bool timerRunning = false;
 
@@ -22,18 +25,51 @@ public class TimerManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
+           
         }
         else
         {
             Destroy(gameObject);
+            return;
         }
+
+        FindUIReferences();
     }
 
     void Start()
     {
+        if (timerText == null || loseScreen == null)
+            FindUIReferences();
+
+        if (loseScreen != null)
+            loseScreen.SetActive(false);
+
+        ShowTimer();
         StartTimer();
     }
+
+    private void FindUIReferences()
+    {
+        if (timerText == null)
+        {
+            GameObject timerObj = GameObject.Find("TimerText_TMP");
+            if (timerObj != null)
+            {
+                timerText = timerObj.GetComponent<TMP_Text>();
+            }
+            
+        }
+
+        if (loseScreen == null)
+        {
+            GameObject loseScreenObj = GameObject.Find("LoseScreen");
+            if (loseScreenObj != null)
+            {
+                loseScreen = loseScreenObj;
+            }
+        }
+    }
+
 
     void Update()
     {
@@ -57,6 +93,9 @@ public class TimerManager : MonoBehaviour
         currentTime = totalTime;
         timerRunning = true;
         UpdateTimerDisplay();
+
+        if (loseScreen != null)
+            loseScreen.SetActive(false);
     }
 
     public void StopTimer()
@@ -87,19 +126,57 @@ public class TimerManager : MonoBehaviour
         if (loseScreen != null)
         {
             loseScreen.SetActive(true);
+            HideTimer();
+            HidePauseButton();
+            StopTimer();
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
 
-            Time.timeScale = 0f;
+            StopGameplayMusic();
         }
-        else
+        
+    }
+
+    private void HidePauseButton()
+    {
+        if (pauseMenu != null)
         {
-            Debug.LogWarning("Lose screen reference not set in TimerManager!");
+            pauseMenu.HidePauseButton();
         }
     }
+
+    private void StopGameplayMusic()
+    {
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.StopMusic();
+        }
+    }
+
+    private void HideTimer()
+    {
+
+        if (timerText != null)
+        {
+            timerText.gameObject.SetActive(false);
+        }
+
+    }
+
+    private void ShowTimer()
+    {
+        if (timerText != null)
+        {
+            timerText.gameObject.SetActive(true);
+        }
+    }
+
+
 
     public void RestartGame()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("GameScene");
     }
 
     public void GoToMainMenu()

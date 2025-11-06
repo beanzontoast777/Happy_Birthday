@@ -86,6 +86,14 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene(mainMenuSceneName);
     }
 
+    public void HidePauseButton()
+    {
+        if (pauseButton != null)
+        {
+            pauseButton.SetActive(false);
+        }
+    }
+
     private void DisablePlayerInput()
     {
         if (playerController != null)
