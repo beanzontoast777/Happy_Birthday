@@ -5485,7 +5485,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &658854070
 RectTransform:
   m_ObjectHideFlags: 0
@@ -68128,6 +68128,8 @@ MonoBehaviour:
   OnAllIngredientsCollected:
     m_PersistentCalls:
       m_Calls: []
+  winPanel: {fileID: 658854069}
+  winPanelDelay: 3
 --- !u!1 &1999358925 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 68360ca1b95494f418dfca3b28895b01, type: 3}
@@ -70224,6 +70226,8 @@ MonoBehaviour:
   OnAllIngredientsCollected:
     m_PersistentCalls:
       m_Calls: []
+  winPanel: {fileID: 0}
+  winPanelDelay: 0
 --- !u!114 &4460976152862769551
 MonoBehaviour:
   m_ObjectHideFlags: 0

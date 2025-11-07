@@ -10,6 +10,17 @@ public class PlayerInventory : MonoBehaviour
 {
     public List<Collectible> collectedIngredients = new List<Collectible>();
     public UnityEvent OnAllIngredientsCollected;
+    public GameObject winPanel;
+    public float winPanelDelay;
+
+    void Start()
+    {
+        // Hide win panel at start
+        if (winPanel != null)
+        {
+            winPanel.SetActive(false);
+        }
+    }
 
     public void CollectIngredient(Collectible collectible)
     {
@@ -46,7 +57,34 @@ public class PlayerInventory : MonoBehaviour
             {
                 OnAllIngredientsCollected.Invoke();
                 Debug.Log("ALL INGREDIENTS COLLECTED! YOU WIN!");
+
+                // Use this instead:
+                StartCoroutine(DelayedWinPanel());
             }
+        }
+    }
+
+    private IEnumerator DelayedWinPanel()
+    {
+        yield return new WaitForSeconds(winPanelDelay);
+        ShowWinPanel();
+    }
+
+    private void ShowWinPanel()
+    {
+        if (winPanel != null)
+        {
+            winPanel.SetActive(true);
+
+            // Optional: Unlock cursor for win panel
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
+            Debug.Log("Win panel shown!");
+        }
+        else
+        {
+            Debug.LogError("Win Panel reference not set in PlayerInventory!");
         }
     }
 
