@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using static UnityEngine.Rendering.BoolParameter;
 
 public class DialogueUI : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class DialogueUI : MonoBehaviour
             dialoguePanel.SetActive(false);
     }
 
-    public void ShowDialogue(string line)
+    public void ShowDialogue(string line, float displayTime = 3f)
     {
         if (dialoguePanel != null)
             dialoguePanel.SetActive(true);
@@ -34,6 +35,9 @@ public class DialogueUI : MonoBehaviour
             dialogueText.text = line;
         else
             Debug.LogError("Dialogue Text is not assigned!");
+
+        Invoke("HideDialogue", displayTime);
+
     }
 
     public void HideDialogue()
