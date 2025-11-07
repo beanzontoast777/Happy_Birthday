@@ -2413,6 +2413,7 @@ MonoBehaviour:
     just thinking about Grandfather Toady. I'm so grateful he's still here with us,
     our pillar of strength. Just the other day I - oh you have to go? Well good luck!
     I'll be the first one at the party!
+  displayTime: 7
   interactionKey: {fileID: 0}
 --- !u!136 &281178453
 CapsuleCollider:
@@ -7677,6 +7678,7 @@ MonoBehaviour:
   dialogueLine: "Hi Mr. Puffcap, I'm looking forward to the party! You're busy with
     the cake right? I think I saw something you're looking for, not too far from
     here. \n"
+  displayTime: 7
   interactionKey: {fileID: 0}
 --- !u!136 &896230537
 CapsuleCollider:
@@ -10556,6 +10558,7 @@ MonoBehaviour:
     I know you''re in a rush but I wanted to play a game with you. See if you can
     find where I hid the ingredient! Lucky for you I''m quite bad at this game! ;
     ) '
+  displayTime: 7
   interactionKey: {fileID: 0}
 --- !u!136 &1228745758
 CapsuleCollider:
@@ -14299,6 +14302,7 @@ MonoBehaviour:
     and collect the ingredients for the cake!
 
 '
+  displayTime: 7
   interactionKey: {fileID: 0}
 --- !u!136 &1718053687
 CapsuleCollider:
@@ -17423,7 +17427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c40c06993a12f7c4b8d1630d680b1273, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalTime: 10
+  totalTime: 120
   timerText: {fileID: 19231133}
   loseScreen: {fileID: 673456687}
   pauseMenu: {fileID: 1679303325}
@@ -19332,6 +19336,7 @@ MonoBehaviour:
   dialogueLine: "Hi Mr. Puffcap, I'm looking forward to the party! You're busy with
     the cake right? I think I saw something you're looking for, not too far from
     here. \n"
+  displayTime: 3
   interactionKey: {fileID: 0}
 --- !u!137 &971865886229260357
 SkinnedMeshRenderer:
@@ -20745,6 +20750,7 @@ MonoBehaviour:
     just thinking about Grandfather Toady. I'm so grateful he's still here with us,
     our pillar of strength. Just the other day I - oh you have to go? Well good luck!
     I'll be the first one at the party!
+  displayTime: 3
   interactionKey: {fileID: 0}
 --- !u!4 &3431863991273338745
 Transform:
@@ -21692,6 +21698,7 @@ MonoBehaviour:
     and collect the ingredients for the cake!
 
 '
+  displayTime: 3
   interactionKey: {fileID: 0}
 --- !u!4 &4602777953608521035
 Transform:
@@ -24449,6 +24456,7 @@ MonoBehaviour:
     I know you''re in a rush but I wanted to play a game with you. See if you can
     find where I hid the ingredient! Lucky for you I''m quite bad at this game! ;
     ) '
+  displayTime: 3
   interactionKey: {fileID: 0}
 --- !u!4 &8770893346903081741
 Transform:
