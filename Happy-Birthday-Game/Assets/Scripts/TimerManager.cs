@@ -133,8 +133,22 @@ public class TimerManager : MonoBehaviour
             Cursor.visible = true;
 
             StopGameplayMusic();
+
+            PlayLoseSound();
         }
         
+    }
+
+    private void PlayLoseSound()
+    {
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayLoseSound();
+        }
+        else
+        {
+            Debug.LogWarning("AudioManager instance not found!");
+        }
     }
 
     private void HidePauseButton()

@@ -15,13 +15,20 @@ public class AudioManager : MonoBehaviour
 
     [Header("Sound Effects")]
     [SerializeField] private AudioClip sparkleSound;
+    [SerializeField] private AudioClip loseSound;
 
     [Header("Music")]
     [SerializeField] private AudioClip mainMenuMusic;
     [SerializeField] private AudioClip storyMontageMusic;
     [SerializeField] private AudioClip gameplayMusic;
 
-    private AudioSource audioSource;
+    [Header("Volume Settings")]
+    [Range(0f, 1f)] public float sparkleVolume = 0.2f;
+    [Range(0f, 1f)] public float loseVolume = 0.8f;
+    [Range(0f, 1f)] public float winVolume = 1.0f;
+    [Range(0f, 1f)] public float musicVolume = 0.27f;
+
+    private AudioSource sfxSource;
     private AudioSource musicSource;
 
     private void Awake()
@@ -38,11 +45,16 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
-        audioSource = GetComponent<AudioSource>();
-
+        sfxSource = gameObject.AddComponent<AudioSource>();
         musicSource = gameObject.AddComponent<AudioSource>();
+
         musicSource.loop = true;
-        musicSource.volume = 0.7f;
+        musicSource.volume = musicVolume;
+        musicSource.priority = 64;
+
+        sfxSource.loop = false;
+        sfxSource.volume = 1f;
+        sfxSource.priority = 128;
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -106,13 +118,26 @@ public class AudioManager : MonoBehaviour
 
     public void PlaySparkleSound()
     {
-        if (sparkleSound != null && audioSource != null)
+        if (sparkleSound != null && sfxSource != null)
         {
-            audioSource.PlayOneShot(sparkleSound);
+            sfxSource.PlayOneShot(sparkleSound, sparkleVolume);
         }
         else
         {
             Debug.LogWarning("Sparkle sound or AudioSource not set!");
+        }
+    }
+
+    public void PlayLoseSound()
+    {
+        if (loseSound != null && sfxSource != null)
+        {
+            sfxSource.PlayOneShot(loseSound, loseVolume);
+            Debug.Log("Lose sound played: " + loseSound.name);
+        }
+        else
+        {
+            Debug.LogWarning("Lose sound or AudioSource not set!");
         }
     }
 
