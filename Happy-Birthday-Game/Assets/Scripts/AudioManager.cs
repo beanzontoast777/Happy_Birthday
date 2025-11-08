@@ -16,6 +16,7 @@ public class AudioManager : MonoBehaviour
     [Header("Sound Effects")]
     [SerializeField] private AudioClip sparkleSound;
     [SerializeField] private AudioClip loseSound;
+    [SerializeField] private AudioClip winSound;
 
     [Header("Music")]
     [SerializeField] private AudioClip mainMenuMusic;
@@ -138,6 +139,19 @@ public class AudioManager : MonoBehaviour
         else
         {
             Debug.LogWarning("Lose sound or AudioSource not set!");
+        }
+    }
+
+    public void PlayWinSound()
+    {
+        if (winSound != null && sfxSource != null)
+        {
+            sfxSource.PlayOneShot(winSound, winVolume);
+            Debug.Log("Win sound played: " + winSound.name);
+        }
+        else
+        {
+            Debug.LogWarning("Win sound or AudioSource not set!");
         }
     }
 

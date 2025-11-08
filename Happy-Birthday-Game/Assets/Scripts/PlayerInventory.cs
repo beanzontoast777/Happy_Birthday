@@ -90,7 +90,13 @@ public class PlayerInventory : MonoBehaviour
                 TimerManager.Instance.StopTimer();
             }
 
-            Debug.Log("Win panel shown!");
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlayWinSound();
+                AudioManager.Instance.StopMusic();
+            }
+
+                Debug.Log("Win panel shown!");
 
         }
         else

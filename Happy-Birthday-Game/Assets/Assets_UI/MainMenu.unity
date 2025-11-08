@@ -509,6 +509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sparkleSound: {fileID: 8300000, guid: 263e233b36232a7448d3ba28c1236f7e, type: 3}
   loseSound: {fileID: 8300000, guid: e5aea027c78fac441a4072eea4d937c8, type: 3}
+  winSound: {fileID: 8300000, guid: 6952e6a7d69ff364bac32ab61809b476, type: 3}
   mainMenuMusic: {fileID: 8300000, guid: dd574ee0dd964b240b942296ab5433be, type: 3}
   storyMontageMusic: {fileID: 8300000, guid: 5cb39bb6117ce5041a99b26e311cd12b, type: 3}
   gameplayMusic: {fileID: 8300000, guid: 73dd8bc6611ed1c4494edda62bc394ba, type: 3}
