@@ -29,7 +29,10 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        PlayerInventory playerInventory = FindFirstObjectByType<PlayerInventory>();
+        bool winPanelActive = playerInventory != null && playerInventory.winPanel != null && playerInventory.winPanel.activeInHierarchy;
+
+        if (Input.GetKeyDown(KeyCode.Escape) && !winPanelActive)
         {
             if (isPaused)
                 ResumeGame();

@@ -199,6 +199,22 @@ public class TimerManager : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
+    public void HideTimerAndPauseText()
+    {
+        if (timerText != null)
+        {
+            timerText.gameObject.SetActive(false);
+        }
+
+        if (pauseMenu != null)
+        {
+            pauseMenu.HidePauseButton();
+        }
+
+    }
+
+
+
     public float GetRemainingTime()
     {
         return currentTime;

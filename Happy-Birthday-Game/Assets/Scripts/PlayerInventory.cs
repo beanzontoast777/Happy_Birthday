@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 //Reference: Unity3D (2023) How to Collect Items (Unity Tutorial). 15 March. Available at: https://youtu.be/EfUCEwKmcjc (Accessed: 14 August 2025).
 //Reference: OpenAI, 2025. ChatGPT (GPT-5 mini) [AI language model]. Personal assistance with Debugging script. 19 August 2025.
@@ -15,7 +16,7 @@ public class PlayerInventory : MonoBehaviour
 
     void Start()
     {
-        // Hide win panel at start
+        
         if (winPanel != null)
         {
             winPanel.SetActive(false);
@@ -28,17 +29,17 @@ public class PlayerInventory : MonoBehaviour
         {
             collectedIngredients.Add(collectible);
 
-            // ADDED DEBUG LINES
-            Debug.Log("=== COLLECTION LOG ===");
+           
+            Debug.Log("COLLECTION LOG");
             Debug.Log("Just collected: " + collectible.ingredientName);
             Debug.Log("Total collected so far: " + collectedIngredients.Count);
 
-            // Debug: List all collected items
+            
             foreach (Collectible item in collectedIngredients)
             {
                 Debug.Log(" - " + item.ingredientName);
             }
-            // END OF ADDED DEBUG LINES
+            
 
             Debug.Log("Collected: " + collectible.ingredientName);
 
@@ -52,13 +53,13 @@ public class PlayerInventory : MonoBehaviour
                 Debug.LogError("No InventoryManager found in scene!");
             }
 
-            // Win condition
+            
             if (collectedIngredients.Count >= 4)
             {
                 OnAllIngredientsCollected.Invoke();
                 Debug.Log("ALL INGREDIENTS COLLECTED! YOU WIN!");
 
-                // Use this instead:
+               
                 StartCoroutine(DelayedWinPanel());
             }
         }
@@ -76,11 +77,21 @@ public class PlayerInventory : MonoBehaviour
         {
             winPanel.SetActive(true);
 
-            // Optional: Unlock cursor for win panel
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
 
+            if (TimerManager.Instance != null)
+            {
+                TimerManager.Instance.HideTimerAndPauseText();
+            }
+
+            if (TimerManager.Instance != null)
+            {
+                TimerManager.Instance.StopTimer();
+            }
+
             Debug.Log("Win panel shown!");
+
         }
         else
         {
@@ -92,4 +103,22 @@ public class PlayerInventory : MonoBehaviour
     {
         return collectedIngredients.Count >= 4;
     }
+
+    public void GoToMainMenu()
+    {
+        Debug.Log("Returning to main menu...");
+
+        Time.timeScale = 1f;
+
+        SceneManager.LoadScene("MainMenu");
+
+    }
+
+    public void TestButton()
+    {
+        Debug.Log("TEST: Button is clicked! This works!");
+    }
+
+
+
 }
