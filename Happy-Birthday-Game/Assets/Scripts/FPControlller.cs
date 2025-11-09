@@ -13,7 +13,7 @@ public class FPController : MonoBehaviour
     public float gravity = -9.81f;
     public float jumpHeight = 1.5f;  
     private int jumpCount = 0;
-    public int maxJumps = 2;
+    public int maxJumps = 200;
 
     [Header("Look Settings")]
     public Transform cameraTransform;

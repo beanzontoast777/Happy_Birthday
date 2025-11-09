@@ -2752,7 +2752,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -3173,7 +3173,7 @@ GameObject:
   - component: {fileID: 330585545}
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -3247,13 +3247,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.52514905, z: -0, w: 0.85101026}
-  m_LocalPosition: {x: -0, y: 1.37, z: 3.58}
+  m_LocalRotation: {x: -0, y: -0.5008255, z: -0, w: 0.86554825}
+  m_LocalPosition: {x: 0.52, y: -0.12, z: 1.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1998527325}
-  m_LocalEulerAnglesHint: {x: 0, y: -63.357, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -60.109, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9562,7 +9562,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -13126,7 +13126,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -21131,7 +21131,7 @@ GameObject:
   - component: {fileID: 1998527327}
   - component: {fileID: 1998527326}
   - component: {fileID: 1998527329}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21157,10 +21157,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
+  m_Radius: 1.85
+  m_Height: 4.52
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 1.62, y: -0.27, z: 1.13}
 --- !u!23 &1998527323
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21246,7 +21246,7 @@ MonoBehaviour:
   moveSpeed: 7
   gravity: -9.81
   jumpHeight: 1.5
-  maxJumps: 2
+  maxJumps: 200
   cameraTransform: {fileID: 330585546}
   lookSensitivity: 0.71
   verticalLookLimit: 90
@@ -21385,13 +21385,13 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 2
-  m_Radius: 0.5
+  m_Height: 4
+  m_Radius: 1.77
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 1.47, y: -0.52, z: 1.29}
 --- !u!114 &1998527329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23007,10 +23007,7 @@ GameObject:
   - component: {fileID: 4460976152862769552}
   - component: {fileID: 4460976152862769551}
   - component: {fileID: 4460976152862769550}
-  - component: {fileID: 4460976152862769549}
-  - component: {fileID: 4460976152862769554}
-  - component: {fileID: 4460976152862769553}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SHROOM FINAL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23620,13 +23617,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75603609808573587}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.42537946, y: 0.5689824, z: 0.55314595, w: 0.43513325}
-  m_LocalPosition: {x: 2.47, y: -0.24, z: 2.7}
+  m_LocalRotation: {x: -0.17348875, y: 0.6942816, z: 0.67588395, w: 0.17622645}
+  m_LocalPosition: {x: 1.87, y: -1.36, z: 1.12}
   m_LocalScale: {x: 142.604, y: 128.9803, z: 141.2933}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1998527325}
-  m_LocalEulerAnglesHint: {x: -91.507, y: -69.112, z: 174.146}
+  m_LocalEulerAnglesHint: {x: -91.507, y: -22.781982, z: 174.146}
 --- !u!1 &817595875835785696
 GameObject:
   m_ObjectHideFlags: 0
@@ -25804,28 +25801,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75603609808573587}
   m_Mesh: {fileID: 3390558720134950976, guid: 70fffc1d5e34016409ce7b5cfac60347, type: 3}
---- !u!64 &4460976152862769549
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 75603609808573587}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3390558720134950976, guid: 70fffc1d5e34016409ce7b5cfac60347, type: 3}
 --- !u!114 &4460976152862769550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25980,54 +25955,6 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!143 &4460976152862769553
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 75603609808573587}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Height: 0.06
-  m_Radius: 0.02
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0.007}
---- !u!136 &4460976152862769554
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 75603609808573587}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.01608707
-  m_Height: 0.048364036
-  m_Direction: 1
-  m_Center: {x: -0.00007040701, y: 0.00202192, z: 0.006395041}
 --- !u!1 &4517930371645038133
 GameObject:
   m_ObjectHideFlags: 0
