@@ -1,7 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
-
+/*
+ * Reference: OpenAI. (2024). ChatGPT. https://chat.openai.com
+ * AI-assisted development for [specific functionality].
+ * Code adapted, modified, and implemented by developer.
+ */
 public class IconOptimizer : MonoBehaviour
 {
     [Header("Animated UI References")]

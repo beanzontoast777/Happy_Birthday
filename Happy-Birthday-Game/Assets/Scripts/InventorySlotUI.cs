@@ -1,5 +1,10 @@
 using UnityEngine;
 using UnityEngine.UI;
+/*
+ * Reference: OpenAI. (2024). ChatGPT. https://chat.openai.com
+ * AI-assisted development for [specific functionality].
+ * Code adapted, modified, and implemented by developer.
+ */
 
 
 public class InventorySlotUI : MonoBehaviour

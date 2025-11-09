@@ -3,6 +3,11 @@ using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using System.Collections.Generic;
 using System.Collections;
+/*
+ * Reference: OpenAI. (2024). ChatGPT. https://chat.openai.com
+ * AI-assisted development for [specific functionality].
+ * Code adapted, modified, and implemented by developer.
+ */
 
 public class InventoryManager : MonoBehaviour
 {
@@ -14,7 +19,7 @@ public class InventoryManager : MonoBehaviour
 
     void Start()
     {
-        // Activate UI first
+        // Activate UI initially
         if (InventoryMenu != null)
         {
             InventoryMenu.SetActive(false);
@@ -30,7 +35,7 @@ public class InventoryManager : MonoBehaviour
 
     private IEnumerator InitializeInventory()
     {
-        // Wait for one frame to ensure all components are loaded
+        // Wait for one frame to ensure all components load
         yield return null;
 
         // Find player inventory
