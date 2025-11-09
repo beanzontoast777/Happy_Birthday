@@ -29,7 +29,8 @@ public class PlayerInventory : MonoBehaviour
         {
             collectedIngredients.Add(collectible);
 
-           
+            PlayCollectionSound();
+
             Debug.Log("COLLECTION LOG");
             Debug.Log("Just collected: " + collectible.ingredientName);
             Debug.Log("Total collected so far: " + collectedIngredients.Count);
@@ -62,6 +63,18 @@ public class PlayerInventory : MonoBehaviour
                
                 StartCoroutine(DelayedWinPanel());
             }
+        }
+    }
+
+    private void PlayCollectionSound()
+    {
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayCollectionSound();
+        }
+        else
+        {
+            Debug.LogWarning("AudioManager instance not found!");
         }
     }
 

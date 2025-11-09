@@ -17,6 +17,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip sparkleSound;
     [SerializeField] private AudioClip loseSound;
     [SerializeField] private AudioClip winSound;
+    [SerializeField] private AudioClip collectionSound;
 
     [Header("Music")]
     [SerializeField] private AudioClip mainMenuMusic;
@@ -28,6 +29,7 @@ public class AudioManager : MonoBehaviour
     [Range(0f, 1f)] public float loseVolume = 0.8f;
     [Range(0f, 1f)] public float winVolume = 1.0f;
     [Range(0f, 1f)] public float musicVolume = 0.27f;
+    [Range(0f, 1f)] public float collectionVolume = 0.6f;
 
     private AudioSource sfxSource;
     private AudioSource musicSource;
@@ -152,6 +154,19 @@ public class AudioManager : MonoBehaviour
         else
         {
             Debug.LogWarning("Win sound or AudioSource not set!");
+        }
+    }
+
+    public void PlayCollectionSound()
+    {
+        if (collectionSound != null && sfxSource != null)
+        {
+            sfxSource.PlayOneShot(collectionSound, collectionVolume);
+            Debug.Log("Collection sound played: " + collectionSound.name);
+        }
+        else
+        {
+            Debug.LogWarning("Collection sound or AudioSource not set!");
         }
     }
 
