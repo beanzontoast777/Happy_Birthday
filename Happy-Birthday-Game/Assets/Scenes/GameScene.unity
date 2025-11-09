@@ -2736,10 +2736,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npcName: NPC
-  dialogueLine: Gee it's a lovely day today isn't it... I've been strolling around
-    just thinking about Grandfather Toady. I'm so grateful he's still here with us,
-    our pillar of strength. Just the other day I - oh you have to go? Well good luck!
-    I'll be the first one at the party!
+  dialogueLine: 'Mmm... dandelions you say? They''ve been floating around all morning.
+    Last I saw, their sparkly sprinkles drifted behind the old stump where the sun
+    naps warm. '
   displayTime: 7
   interactionKey: {fileID: 0}
 --- !u!136 &281178453
@@ -9547,9 +9546,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npcName: NPC
-  dialogueLine: "Hi Mr. Puffcap, I'm looking forward to the party! You're busy with
-    the cake right? I think I saw something you're looking for, not too far from
-    here. \n"
+  dialogueLine: 'Tsk, tsk... always in a rush little one. I spun the sweetest silk
+    myself - it''s tucked behind the gift table, safe from sticky fingers. Now hurry
+    before the icing hardens! '
   displayTime: 7
   interactionKey: {fileID: 0}
 --- !u!136 &896230537
@@ -13110,10 +13109,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npcName: NPC
-  dialogueLine: 'Heard you need some help, I may have something you''re looking for...
-    I know you''re in a rush but I wanted to play a game with you. See if you can
-    find where I hid the ingredient! Lucky for you I''m quite bad at this game! ;
-    ) '
+  dialogueLine: 'The fairies wept for joy the day the Grandfather was born. Some
+    still shimmer among the stones where the shadows meet the light. Find them gently,
+    little one -they vanish if you rush. '
   displayTime: 7
   interactionKey: {fileID: 0}
 --- !u!136 &1228745758
@@ -17426,8 +17424,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.7202, y: -73}
-  m_SizeDelta: {x: 724.1392, y: 212.9337}
+  m_AnchoredPosition: {x: 10.9086, y: -99}
+  m_SizeDelta: {x: 626.7449, y: 171.7789}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1684780158
 MonoBehaviour:
@@ -17478,15 +17476,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 52
+  m_fontSizeBase: 52
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -17903,11 +17901,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npcName: NPC
-  dialogueLine: 'Mr Puffcap finally! Since you''re behind schedule I have decided
-    to be nice so I''ve written up the inventory. Press ''i'' to see it. Hurry up
-    and collect the ingredients for the cake!
-
-'
+  dialogueLine: 'The forest remembers where it hides its gifts... see the fallen
+    log there? It doesn''t fall by chance... it points the way. Follow where its
+    nose rests, and you''ll find the pollen. '
   displayTime: 7
   interactionKey: {fileID: 0}
 --- !u!136 &1718053687
@@ -19269,7 +19265,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 51ff3502c73760d4b8596dd1815af7eb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0c6cb4ebfa762d544b3aefb5006ffde3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -19303,8 +19299,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00043487, y: -110}
-  m_SizeDelta: {x: 793.51, y: 445.46}
+  m_AnchoredPosition: {x: 0.00043487, y: -143.71002}
+  m_SizeDelta: {x: 793.51, y: 508.88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1826482084 stripped
 GameObject:
@@ -20241,7 +20237,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -29, y: 348}
+  m_AnchoredPosition: {x: -29, y: 410}
   m_SizeDelta: {x: -1126.4895, y: -634.5453}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1884512699
