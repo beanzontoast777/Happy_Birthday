@@ -25133,6 +25133,7 @@ GameObject:
   - component: {fileID: 4102649821282884662}
   - component: {fileID: 7064701055131402212}
   - component: {fileID: 7064701055131402213}
+  - component: {fileID: 7064701055131402214}
   m_Layer: 5
   m_Name: IcingSlot
   m_TagString: Untagged
@@ -25563,6 +25564,7 @@ GameObject:
   - component: {fileID: 4284121118561739068}
   - component: {fileID: 6291268540400046039}
   - component: {fileID: 6291268540400046040}
+  - component: {fileID: 6291268540400046041}
   m_Layer: 5
   m_Name: TearsSlot
   m_TagString: Untagged
@@ -26922,6 +26924,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6291268540400046041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4422002156587833684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5075ec9b8a09dad4c8c29dedfe2aa5d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animatedImages: []
+  animator: {fileID: 6291268540400046040}
+  useVisibilityDetection: 1
+  checkInterval: 0.1
 --- !u!224 &6300648066979059180
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27027,6 +27045,7 @@ GameObject:
   - component: {fileID: 7279448103296313144}
   - component: {fileID: 269583558281002621}
   - component: {fileID: 7279448103296313145}
+  - component: {fileID: 7279448103296313146}
   m_Layer: 5
   m_Name: SprinklesSlot
   m_TagString: Untagged
@@ -27729,6 +27748,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7064701055131402214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3784520492961890136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5075ec9b8a09dad4c8c29dedfe2aa5d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animatedImages: []
+  animator: {fileID: 7064701055131402213}
+  useVisibilityDetection: 1
+  checkInterval: 0.1
 --- !u!224 &7140472284911711090
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27824,6 +27859,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7279448103296313146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6407459276365173674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5075ec9b8a09dad4c8c29dedfe2aa5d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animatedImages: []
+  animator: {fileID: 7279448103296313145}
+  useVisibilityDetection: 1
+  checkInterval: 0.1
 --- !u!4 &7291698014255925001
 Transform:
   m_ObjectHideFlags: 0
@@ -28423,6 +28474,7 @@ GameObject:
   - component: {fileID: 3021284745007543494}
   - component: {fileID: 8520612901194293523}
   - component: {fileID: 8520612901194293524}
+  - component: {fileID: 8520612901194293525}
   m_Layer: 5
   m_Name: FlourSlot
   m_TagString: Untagged
@@ -28562,6 +28614,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8520612901194293525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8383915904681081685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5075ec9b8a09dad4c8c29dedfe2aa5d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animatedImages: []
+  animator: {fileID: 8520612901194293524}
+  useVisibilityDetection: 1
+  checkInterval: 0.1
 --- !u!1 &8536131514454673418
 GameObject:
   m_ObjectHideFlags: 0
@@ -29025,6 +29093,7 @@ GameObject:
   - component: {fileID: 253270781415264153}
   - component: {fileID: 2032801133365686315}
   - component: {fileID: 2669939693382578420}
+  - component: {fileID: 9189254901347943352}
   m_Layer: 5
   m_Name: Inventory Slots
   m_TagString: Untagged
@@ -29032,6 +29101,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &9189254901347943352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9189254901347943351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5075ec9b8a09dad4c8c29dedfe2aa5d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animatedImages: []
+  animator: {fileID: 0}
+  useVisibilityDetection: 1
+  checkInterval: 0.1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
