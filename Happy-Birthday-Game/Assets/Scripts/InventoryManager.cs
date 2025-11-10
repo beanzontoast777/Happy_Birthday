@@ -47,11 +47,11 @@ public class InventoryManager : MonoBehaviour
             // Force initial inventory update
             UpdateInventoryDisplay(playerInventory);
 
-            // Show inventory briefly at start (SHORT - 1.5 seconds)
+            // Show inventory briefly at start (2.2 seconds)
             if (InventoryMenu != null)
             {
                 InventoryMenu.SetActive(true);
-                yield return new WaitForSeconds(1.5f); // Shorter time
+                yield return new WaitForSeconds(2.2f); // Shorter time
                 if (!menuActivated) // Only hide if player didn't open it manually
                 {
                     InventoryMenu.SetActive(false);
